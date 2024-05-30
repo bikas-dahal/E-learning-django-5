@@ -49,6 +49,14 @@ INTERNAL_IPS = [
 ]   
 
 
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -63,6 +71,7 @@ INSTALLED_APPS = [
     'embed_video',
     'debug_toolbar',
     'redisboard',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
