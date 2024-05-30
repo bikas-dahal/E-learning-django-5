@@ -8,11 +8,11 @@ router = routers.DefaultRouter()
 router.register('courses', views.CourseViewSet)
 router.register('subjects', views.SubjectViewSet)
 urlpatterns = [
-    path(
-        'courses/<pk>/enroll/',
-        views.CourseEnrollView.as_view(),
-        name='course_enroll'
-    ),
+    # path(
+    #     'courses/<pk>/enroll/',
+    #     views.CourseEnrollView.as_view(),
+    #     name='course_enroll'
+    # ),
     # path(
     #     'subjects/',
     #     views.SubjectListView.as_view(),
